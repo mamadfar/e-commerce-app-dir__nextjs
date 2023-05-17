@@ -12,7 +12,7 @@ const ProductPage: FC<IProductProps> = ({product}) => {
         //? prefetch = false to prevent to fetch the date of each product in the background
         <Link prefetch={false} href={`/products/${id}`} className="h-96 flex flex-col p-5 rounded border group hover:scale-105 transition-transform ease-out duration-200">
             <div className="relative max-h-72 flex-1">
-                <ProductImage image={image} title={title}/>
+                <ProductImage image={image} title={title} fill/>
             </div>
             <div className="font-semibold flex items-center justify-between mt-4 mb-1">
                 <p className="w-44 truncate">{title}</p>
