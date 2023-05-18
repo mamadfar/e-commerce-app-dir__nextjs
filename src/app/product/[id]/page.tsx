@@ -8,6 +8,12 @@ interface IProductPageProps {
     };
 }
 
+export async function generateMetadata({params}) {
+    return {
+        title: `Product No.${params.id}`,
+    };
+}
+
 const ProductPage = async ({params: {id}}): Promise<IProductPageProps & ReturnType<JSXElement>> => {
 
     try {

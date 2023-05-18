@@ -10,7 +10,7 @@ const Product: FC<IProductProps> = ({product}) => {
     const {id, title, image, description, price, rating, category} = product;
     return (
         //? prefetch = false to prevent to fetch the date of each product in the background
-        <Link prefetch={false} href={`/product/${id}`} className="h-96 flex flex-col p-5 rounded border group hover:scale-105 transition-transform ease-out duration-200">
+        <Link href={`/product/${id}`} className="h-96 flex flex-col p-5 rounded border group hover:scale-105 transition-transform ease-out duration-200">
             <div className="relative max-h-72 flex-1">
                 <ProductImage image={image} title={title} fill/>
             </div>
