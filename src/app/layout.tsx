@@ -5,7 +5,7 @@ import {Footer, Header} from "@/components";
 
 export const metadata = {
   title: 'E-Commerce',
-  description: 'A small digital shop',
+  description: 'A small digital shop'
 };
 
 // const inter = Inter({ subsets: ['latin'] })
