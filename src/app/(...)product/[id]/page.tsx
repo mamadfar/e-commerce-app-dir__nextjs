@@ -10,7 +10,7 @@ import {StarIcon} from "@heroicons/react/24/solid";
 const Modal = () => {
 
     const [isOpen, setIsOpen] = useState(true);
-    const [product, setProduct] = useState<ProductType>(null);
+    const [product, setProduct] = useState<ProductType | undefined>();
     const [loading, setLoading] = useState(false);
 
     const {id} = useParams();
