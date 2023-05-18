@@ -92,14 +92,10 @@ const Modal = () => {
                                                 <Button
                                                     title="Add to bag"
                                                     className="w-full bg-blue-600 text-white border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black"/>
-                                                <button onClick={() => window.location.reload()}
-                                                        className="button w-full bg-transparent border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent">View
-                                                    full details
-                                                </button>
-                                                {/*<Button*/}
-                                                {/*    onClick={() => router.push(`/product/${product.id}`)}*/}
-                                                {/*    title="View full details"*/}
-                                                {/*    className="w-full bg-transparent border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent"/>*/}
+                                                <Button
+                                                    onClick={() => window.location.reload()}
+                                                    title="View full details"
+                                                    className="w-full bg-transparent border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent"/>
                                             </div>
                                         </div>
                                     </div>
