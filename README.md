@@ -14,4 +14,4 @@ pnpm dev
 ![Preview](./public/e-commerce-preview.gif)
 
 ## Link
-[E-Commerce App Link](https://ecommerce-app-pxca5qgc7-mamadfar.vercel.app)
+[E-Commerce App Link](https://ecommerce-app-dir-mamadfar.vercel.app/)

@@ -1,6 +1,7 @@
-import {JSXElement} from "@typescript-eslint/types/dist/generated/ast-spec";
 import {ProductImage} from "@/components";
 import {notFound} from "next/navigation";
+import {Metadata} from "next";
+import {ReactNode} from "react";
 
 interface IProductPageProps {
     params: {
@@ -8,13 +9,13 @@ interface IProductPageProps {
     };
 }
 
-export async function generateMetadata({params}) {
+export async function generateMetadata({params: {id}}: IProductPageProps): Promise<Metadata> {
     return {
-        title: `Product No.${params.id}`,
+        title: `Product No.${id}`,
     };
 }
 
-const ProductPage = async ({params: {id}}): Promise<IProductPageProps & ReturnType<JSXElement>> => {
+const ProductPage = async ({params: {id}}: IProductPageProps): Promise<any> => {
 
     try {
         const res = await fetch(`https://fakestoreapi.com/products/${id}`);

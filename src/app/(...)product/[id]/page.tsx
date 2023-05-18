@@ -39,7 +39,7 @@ const Modal = () => {
         getProduct(controller.signal);
 
         return () => controller.abort("The user abort the request.");
-    }, [id])
+    }, [id, getProduct])
 
     return (
         <Dialog
