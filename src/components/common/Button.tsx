@@ -1,9 +1,8 @@
 import {ButtonHTMLAttributes, FC} from 'react';
 
-interface IButtonProps {
+interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     title: string;
     className?: string;
-    props?: ButtonHTMLAttributes<HTMLButtonElement>;
 }
 
 const Button:FC<IButtonProps> = ({title, className,...props}) => {
